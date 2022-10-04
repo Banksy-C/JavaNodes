@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/javanodes.iml" filepath="$PROJECT_DIR$/.idea/javanodes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/node-01-javabase/node-01-javabase.iml" filepath="$PROJECT_DIR$/node-01-javabase/node-01-javabase.iml" />
+      <module fileurl="file://$PROJECT_DIR$/node-02-javasenior/node-02-javasenior.iml" filepath="$PROJECT_DIR$/node-02-javasenior/node-02-javasenior.iml" />
+      <module fileurl="file://$PROJECT_DIR$/node-03-mybatis/node-03-mybatis.iml" filepath="$PROJECT_DIR$/node-03-mybatis/node-03-mybatis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/node-04-spring/node-04-spring.iml" filepath="$PROJECT_DIR$/node-04-spring/node-04-spring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/node-05-springmvc/node-05-springmvc.iml" filepath="$PROJECT_DIR$/node-05-springmvc/node-05-springmvc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/node-06-springboot/node-06-springboot.iml" filepath="$PROJECT_DIR$/node-06-springboot/node-06-springboot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/node-04-spring/Spring-06-Proxy/spring-06-proxy.iml" filepath="$PROJECT_DIR$/node-04-spring/Spring-06-Proxy/spring-06-proxy.iml" />
+    </modules>
+  </component>
+</project>
