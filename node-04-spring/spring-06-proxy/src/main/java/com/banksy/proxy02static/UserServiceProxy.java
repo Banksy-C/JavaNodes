@@ -1,13 +1,13 @@
 package com.banksy.proxy02static;
 
+import com.banksy.proxy02static.service.Impl.UserServiceImpl;
+import com.banksy.proxy02static.service.UserService;
+
 /**
- * 【代理】
+ * 代理角色：【代理类 ; 代理真实角色后, 一般会做一些附属的操作】
  * @Author banksy
- * @Date 2022/10/4 10:17 AM
- * @Param
- * @return
  **/
-public class UserServiceProxy implements UserService{
+public class UserServiceProxy implements UserService {
     private UserServiceImpl userService;
 
 
@@ -42,4 +42,5 @@ public class UserServiceProxy implements UserService{
     public void log(String msg){
         System.out.println("执行了"+msg+"方法");
     }
+
 }

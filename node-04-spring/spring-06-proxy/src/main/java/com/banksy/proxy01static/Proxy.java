@@ -1,7 +1,14 @@
 package com.banksy.proxy01static;
 
+import com.banksy.proxy01static.service.Impl.Host;
+import com.banksy.proxy01static.service.Rent;
+
+/**
+ * 代理角色：【代理类 ; 代理真实角色后, 一般会做一些附属的操作】
+ * @Author banksy
+ **/
 //代理角色：中介
-public class Proxy implements Rent{
+public class Proxy implements Rent {
     private Host host;
 
     //租房

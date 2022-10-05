@@ -1,8 +1,11 @@
 package com.banksy.proxy01static;
 
+import com.banksy.proxy01static.service.Impl.Host;
 import org.junit.Test;
-
-//客户类，一般客户都会去找代理！
+/**
+ * 客户角色：【使用代理角色来进行一些操作】去找代理！
+ * @Author banksy
+ **/
 public class Client {
     @Test
     public static void main(String[] args) {

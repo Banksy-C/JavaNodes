@@ -15,4 +15,10 @@ runingStructure：获取运行时类的完整结构
     ｜-GetMethodTest：获取运行时类的方法结构
     ｜-GetOtherTest：获取运行时其他结构
     ｜-CallRuningStructureTest：调用运行时类中指定的结构：属性、方法、构造器
-：动态代理
+
+Proxy：代理
+StaticProxyTest.java：静态代理
+DynamicProxyTest.java：动态代理
+
+在Spring框架AOP就是以动态代理实现的【其底层就是反射】
+在框架中可用：通过 Spring API 实现；自定义类实现Aop【主要是切面定义】；使用注解实现；三种方法实现；

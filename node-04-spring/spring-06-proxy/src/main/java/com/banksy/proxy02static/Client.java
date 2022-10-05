@@ -1,5 +1,11 @@
 package com.banksy.proxy02static;
 
+import com.banksy.proxy02static.service.Impl.UserServiceImpl;
+
+/**
+ * 客户角色：【使用代理角色来进行一些操作】
+ * @Author banksy
+ **/
 public class Client {
     public static void main(String[] args) {
         //真实业务

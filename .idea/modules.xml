@@ -10,6 +10,7 @@
       <module fileurl="file://$PROJECT_DIR$/node-05-springmvc/node-05-springmvc.iml" filepath="$PROJECT_DIR$/node-05-springmvc/node-05-springmvc.iml" />
       <module fileurl="file://$PROJECT_DIR$/node-06-springboot/node-06-springboot.iml" filepath="$PROJECT_DIR$/node-06-springboot/node-06-springboot.iml" />
       <module fileurl="file://$PROJECT_DIR$/node-04-spring/Spring-06-Proxy/spring-06-proxy.iml" filepath="$PROJECT_DIR$/node-04-spring/Spring-06-Proxy/spring-06-proxy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/node-04-spring/spring-07-aop/spring-07-aop.iml" filepath="$PROJECT_DIR$/node-04-spring/spring-07-aop/spring-07-aop.iml" />
     </modules>
   </component>
 </project>

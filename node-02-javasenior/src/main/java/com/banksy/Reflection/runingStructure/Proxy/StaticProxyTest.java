@@ -6,60 +6,62 @@ package com.banksy.Reflection.runingStructure.Proxy;
  * @Data 2022/10/3 9:13 PM
  * @Version 1.0
  **/
-//接口【抽象角色，产品衣服】
-interface ClothFactory{
-    void produceCloth();
+//抽象角色：【一般使用接口或者抽象类来实现】
+interface ClothesFactory {
+    void makeClothes();//造衣服功能
 }
 
-//代理类【真实角色，造衣服工厂】
-class ProxyClothFactory implements ClothFactory{
+//真实角色：【被代理类，真正的实现接口方法，公共操作】实现做衣服的功能、造衣服工厂
+class ClothesFactoryImpl implements ClothesFactory{
+    @Override
+    public void makeClothes() {
+        System.out.println("衣服造好，请取走～");
+    }
+}
 
-    private ClothFactory factory;//用被代理类对象进行实例化
+//代理角色1：【代理类; 代理真实角色后 , 一般会做一些附属的操作】nike工厂
+class NikeClothesFactory implements ClothesFactory{
+    private ClothesFactory clothesFactory;//代理类对象进行实例化
 
-    public ProxyClothFactory(ClothFactory factory){//带参构造器
-        this.factory = factory;
+    public NikeClothesFactory(ClothesFactory clothesFactory) {
+        this.clothesFactory = clothesFactory;
     }
 
     @Override
-    public void produceCloth() {
-        System.out.println("代理工厂做一些准备工作");
-        factory.produceCloth();
-        System.out.println("代理工厂做一些后续的收尾工作");
+    public void makeClothes() {
+        System.out.println("Nike工厂：等我去到工厂给你造！");
+        clothesFactory.makeClothes();
     }
 }
 
-//被代理类1【代理角色1，生产什么牌子的衣服】
-class NikeClothFactory implements ClothFactory{
+//代理角色2：【代理类; 代理真实角色后 , 一般会做一些附属的操作】Adidas工厂
+class AdidasClothesFactory implements ClothesFactory{
+    private ClothesFactory clothesFactory;//代理类对象进行实例化
+
+    public AdidasClothesFactory(ClothesFactory clothesFactory) {
+        this.clothesFactory = clothesFactory;
+    }
 
     @Override
-    public void produceCloth() {
-        System.out.println("Nike工厂生产一批运动服");
+    public void makeClothes() {
+        System.out.println("Adidas工厂：等我去到工厂给你造！");
+        clothesFactory.makeClothes();
     }
 }
 
-//被代理类2【代理角色1，生产什么牌子的衣服】
-class AdidasClothFactory implements ClothFactory{
-
-    @Override
-    public void produceCloth() {
-        System.out.println("Adidas工厂生产一批运动服");
-    }
-}
-
-//【客户角色，去找代工厂，需要什么牌子的衣服】
+//客户角色：【使用代理角色来进行一些操作】去找什么工厂，买什么衣服
 public class StaticProxyTest {
     public static void main(String[] args) {
-
-        //创建被代理类的对象【贴牌厂要卖衣服】
-        ClothFactory nike = new NikeClothFactory();
-        ClothFactory adidas = new AdidasClothFactory();
-        //创建代理类的对象【】
-        ClothFactory proxyClothFactory = new ProxyClothFactory(nike);
-        ClothFactory proxyClothFactory1 = new ProxyClothFactory(adidas);
-        //执行代理类中的produceCloth()
-        proxyClothFactory.produceCloth();
+        //创建被代理类的对象【做工厂】
+        ClothesFactoryImpl clothesFactory = new ClothesFactoryImpl();
+        //创建代理类的对象【贴牌厂去找做工厂产出】
+        NikeClothesFactory nikeClothesFactory = new NikeClothesFactory(clothesFactory);
+        AdidasClothesFactory adidasClothesFactory = new AdidasClothesFactory(clothesFactory);
+        //执行代理类中的方法【客户找贴牌厂要造衣服】
+        System.out.println("客户：给我造Nike！");
+        nikeClothesFactory.makeClothes();
         System.out.println();
-        proxyClothFactory1.produceCloth();
-
+        System.out.println("客户：给我造Adidas！");
+        adidasClothesFactory.makeClothes();
     }
 }
