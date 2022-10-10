@@ -1,0 +1,10 @@
+server:
+  port: 9090
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://172.16.123.11:3306/springboot?useUnicode=true?characterEncoding=utf-8?serverTimezone=GMT%2b8
+    username: root
+    password: 123456
+mybatis:
+  mapper-locations: classpath:mapper/*.xml

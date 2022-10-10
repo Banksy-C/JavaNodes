@@ -1,9 +1,7 @@
 Java学习笔记
-
-JavaBase
-JavaSenior
-
-Framework_01_MyBatis
-Framework_02_Spring
-Framework_03_SpringMVC
-Framework_04_Springboot
+node-01-javabase        java基础
+node-02-javasenior      java进阶
+node-03-mybatis         mybatis
+node-04-spring          spring
+node-05-springmvc       springmvc
+node-06-springboot      springboot
