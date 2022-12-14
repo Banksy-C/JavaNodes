@@ -12,6 +12,7 @@
         <module name="spring-07-aop" />
         <module name="node-06-springboot" />
         <module name="spring-06-proxy" />
+        <module name="node-07-designPatterns" />
         <module name="node-03-mybatis" />
         <module name="node-05-springmvc" />
       </profile>
@@ -23,6 +24,7 @@
       <module name="node-04-spring" target="8" />
       <module name="node-05-springmvc" target="8" />
       <module name="node-06-springboot" target="1.8" />
+      <module name="node-07-designPatterns" target="8" />
       <module name="spring-06-proxy" target="8" />
       <module name="spring-07-aop" target="8" />
     </bytecodeTargetLevel>

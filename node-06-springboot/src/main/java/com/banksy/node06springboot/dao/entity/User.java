@@ -1,4 +1,4 @@
-package com.banksy.node06springboot.entity;
+package com.banksy.node06springboot.dao.entity;
 
 import lombok.Data;
 

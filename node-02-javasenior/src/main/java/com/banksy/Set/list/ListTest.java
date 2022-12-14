@@ -92,7 +92,8 @@ public class ListTest {
         list.add(123);
         list.add(456);
         list.add("AA");
-        list.add(new Person("Tom",12));
+        Person tom = new Person("Tom", 12);
+        list.add(tom);
         list.add(456);
         System.out.println(list);
         /** 1 **/

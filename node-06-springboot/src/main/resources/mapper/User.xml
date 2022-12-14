@@ -5,7 +5,7 @@
 
 <mapper namespace="com.banksy.node06springboot.mapper.UserMapper">
 
-    <select id="userList" resultType="com.banksy.node06springboot.entity.User">
+    <select id="userList" resultType="com.banksy.node06springboot.dao.entity.User">
         select id, name, age, sex, data
           from user
     </select>

@@ -1,7 +1,6 @@
 package com.banksy.node06springboot.controller;
 
-import com.banksy.node06springboot.entity.User;
-import com.banksy.node06springboot.entity.Vo.UserVo;
+import com.banksy.node06springboot.dao.Vo.UserVo;
 import com.banksy.node06springboot.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;

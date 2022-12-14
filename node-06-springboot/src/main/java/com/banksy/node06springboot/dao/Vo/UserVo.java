@@ -1,4 +1,4 @@
-package com.banksy.node06springboot.entity.Vo;
+package com.banksy.node06springboot.dao.Vo;
 
 import lombok.Data;
 
