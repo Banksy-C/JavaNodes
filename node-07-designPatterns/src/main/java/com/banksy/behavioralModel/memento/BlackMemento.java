@@ -2,7 +2,7 @@ package com.banksy.behavioralModel.memento;
 
 /**
  * 黑箱备忘录
- * 备忘录角色对发起人对象提供一个接口，而为其他对象提供一个窄接口
+ * 备忘录角色对发起人对象提供一个接口，而为其他对象提供一个窄接口；
  * @author banksy
  **/
 class BlackMementoClient {

@@ -4,6 +4,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * 观察者模式
+ * Define a one-to-many dependency between objects so that when one object changes state,
+ * all its dependents are notified and updated automatically.
+ * 定义对象间一种一对多的依赖关系， 使得每当一个对象改变状态， 则所有依赖于它的对象都会得到通知并被自动更新。
+ *
+ * 角色：抽象主题、具体主题、抽象观察者、具体观察者
+ * 优点：观察者和主题之间是抽象耦合的；建立一套触发机制
+ * 缺点：需要考虑一下开发效率和运行效率问题， 一个被观察者， 多个观察者， 开发和调试就会比较复杂，
+ *      而且在Java中消息的通知默认是顺序执行， 一个观察者卡壳， 会影响整体的执行效率。 在这种情况下， 一般考虑采用异步的方式
+ * 适用场景：关联行为场景；事件多级触发场景；跨系统的消息交换场景， 如消息队列的处理机制。
  *
  * @author banksy
  * @version 1.0

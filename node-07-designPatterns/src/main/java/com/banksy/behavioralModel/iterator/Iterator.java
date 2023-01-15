@@ -4,6 +4,14 @@ import java.util.Vector;
 
 /**
  * 迭代器模式
+ * Provide a way to access the elements of an aggregate object sequentially without exposing its underlying representation.
+ * 它提供一种方法访问一个容器对象中各个元素，而又不需暴露该对象的内部细节。
+ *
+ * 角色：抽象迭代器【负责定义访问和遍历元素的接口， 而且基本上是有固定的3个方法 [first()获得第一个元素， next()访问下一个元素， isDone()是否已经访问到底部]】；
+ *      具体迭代器【实现迭代器接口， 完成容器元素的遍历】；
+ *      抽象容器【负责提供创建具体迭代器角色的接口， 必然提供一个类似createIterator()这样的方法】；
+ *      具体容器【实现容器接口定义的方法， 创建出容纳迭代器的对象】；
+ *
  **/
 class IteratorClient {
     public static void main(String[] args) {
